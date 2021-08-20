@@ -1,0 +1,15 @@
+$textDarkColor:#2f3044;
+$textBlandColor:#7e8299;
+$primaryColor:#0094ff;
+
+*{
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6rem;
+    box-sizing: border-box;
+    scroll-behavior:smooth;
+}

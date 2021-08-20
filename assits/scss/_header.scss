@@ -1,0 +1,6 @@
+@import "base";
+@mixin textStyle {
+    color:$textDarkColor;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
