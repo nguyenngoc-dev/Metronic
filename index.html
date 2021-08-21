@@ -13,10 +13,83 @@
     <link rel="stylesheet" href="./assits/font/fontawesome/fontawesome-free-5.15.3-web/css/all.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="./assits/css/style.css">
+    <link rel="stylesheet" href="./assits/css/base.css">
+    <link rel="stylesheet" href="./assits/css/grid.css">
+    <link rel="stylesheet" href="./assits/css/header.css">
 </head>
 <body>
-    Nam
+  
+    <div class="main">
+        <!-- scroll to top -->
+        <a id="btn" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="scroll-top-icon">
+                <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+                <title>Stockholm-icons / Navigation / Up-2</title>
+                <desc>Created with Sketch.</desc>
+                <defs></defs>
+                <g id="Stockholm-icons-/-Navigation-/-Up-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon>
+                    <rect id="Rectangle" fill="white" opacity="0.3" x="11" y="10" width="2" height="10" rx="1"></rect>
+                    <path d="M6.70710678,12.7071068 C6.31658249,13.0976311 5.68341751,13.0976311 5.29289322,12.7071068 C4.90236893,12.3165825
+                     4.90236893,11.6834175 5.29289322,11.2928932 L11.2928932,5.29289322 C11.6714722,4.91431428 12.2810586,4.90106866 12.6757246,5.26284586 L18.6757246,10.7628459 
+                     C19.0828436,11.1360383 19.110
+                     3465,11.7686056 18.7371541,12.1757246 C18.3639617,12.5828436 17.7313944,12.6103465 17.3242754,12.2371541 L12.0300757,7.38413782 L6.70710678,12.7071068 Z" 
+                    id="Path-94" fill="white" fill-rule="nonzero"></path>
+                </g>
+            </svg>
+        </a>
+        <header class="header"> 
+            <div class="grid wide full-height" >
+                <div class="container full-height">
+                    <div class="header-logo full-height">
+                        <a href="#" class="header-logo__link">
+                            <img src="https://keenthemes.com/images/logos/logo-full.svg" alt="" class="header-logo__img">
+                        </a>
+                    </div>
+                    <div class="header-nav">
+                        <ul class="header-nav-list">
+                            <li class="header-nav-item">
+                                <a href="#" class="header-nav-link">Home</a>
+                            </li>
+                            <li class="header-nav-item">
+                                <a href="#" class="header-nav-link active">Products</a>
+                            </li>
+                            <li class="header-nav-item">
+                                <a href="#" class="header-nav-link">Learn</a>
+                            </li>
+                            <li class="header-nav-item">
+                                <a href="#" class="header-nav-link">Hire Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container" style="height: 5000px;"></div>
+    </div>
+    <script src="./assits/js/header.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./assits/owlcarousel/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                if($(window).scrollTop()>200)
+                {
+                    $("#btn").fadeIn();
+                }
+                else
+                {
+                    $("#btn").fadeOut();
+                }
+    
+            })
+            $("#btn").click(function(){
+                
+                $("html,body").animate({scrollTop:0},"fast");
+    
+            })
+        });
+        
+    </script>
 </body>
 </html>
