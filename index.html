@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./assits/css/base.css">
     <link rel="stylesheet" href="./assits/css/grid.css">
     <link rel="stylesheet" href="./assits/css/header.css">
+    <link rel="stylesheet" href="./assits/css/modal.css">
 </head>
 <body>
   
@@ -30,11 +31,7 @@
                 <g id="Stockholm-icons-/-Navigation-/-Up-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                     <polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon>
                     <rect id="Rectangle" fill="white" opacity="0.3" x="11" y="10" width="2" height="10" rx="1"></rect>
-                    <path d="M6.70710678,12.7071068 C6.31658249,13.0976311 5.68341751,13.0976311 5.29289322,12.7071068 C4.90236893,12.3165825
-                     4.90236893,11.6834175 5.29289322,11.2928932 L11.2928932,5.29289322 C11.6714722,4.91431428 12.2810586,4.90106866 12.6757246,5.26284586 L18.6757246,10.7628459 
-                     C19.0828436,11.1360383 19.110
-                     3465,11.7686056 18.7371541,12.1757246 C18.3639617,12.5828436 17.7313944,12.6103465 17.3242754,12.2371541 L12.0300757,7.38413782 L6.70710678,12.7071068 Z" 
-                    id="Path-94" fill="white" fill-rule="nonzero"></path>
+                    <path d="M6.70710678,12.7071068 C6.31658249,13.0976311 5.68341751,13.0976311 5.29289322,12.7071068 C4.90236893,12.3165825 4.90236893,11.6834175 5.29289322,11.2928932 L11.2928932,5.29289322 C11.6714722,4.91431428 12.2810586,4.90106866 12.6757246,5.26284586 L18.6757246,10.7628459 C19.0828436,11.1360383 19.1103465,11.7686056 18.7371541,12.1757246 C18.3639617,12.5828436 17.7313944,12.6103465 17.3242754,12.2371541 L12.0300757,7.38413782 L6.70710678,12.7071068 Z" id="Path-94" fill="white" fill-rule="nonzero"></path>
                 </g>
             </svg>
         </a>
@@ -51,25 +48,376 @@
                             <li class="header-nav-item">
                                 <a href="#" class="header-nav-link">Home</a>
                             </li>
-                            <li class="header-nav-item">
+                            <li class="header-nav-item header-products" style="position: relative;">
                                 <a href="#" class="header-nav-link active">Products</a>
+                                <div class="header-products-sub-menu">
+                                    <a href="#" class="header-products-sub-menu__item">
+                                        <div class="header-products-img-container">
+                                            <img src="https://keenthemes.com/images/letter-icons/default/P.svg" alt="" class="header-products-img-none">
+                                            <img src="https://keenthemes.com/images/letter-icons/active/P.svg" alt="" class="header-products-img-visible">
+                                        </div>
+                                        <div class="header-products-content">
+                                            <h3 class="header-products-heading">
+                                                Pro Templates
+                                            </h3>
+                                            <p class="header-products-pg">
+                                                Bootstrap, Vue, React & Angular
+                                            </p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="header-products-sub-menu__item">
+                                        <div class="header-products-img-container">
+                                            <img src="https://keenthemes.com/images/letter-icons/default/F.svg" alt="" class="header-products-img-none">
+                                            <img src="https://keenthemes.com/images/letter-icons/active/F.svg" alt="" class="header-products-img-visible">
+                                        </div>
+                                        <div class="header-products-content">
+                                            <h3 class="header-products-heading">
+                                                Free Templates
+                                            </h3>
+                                            <p class="header-products-pg">
+                                                Free with Premium Quality
+                                            </p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="header-products-sub-menu__item">
+                                        <div class="header-products-img-container">
+                                            <img src="https://keenthemes.com/images/letter-icons/default/P.svg" alt="" class="header-products-img-none">
+                                            <img src="https://keenthemes.com/images/letter-icons/active/P.svg" alt="" class="header-products-img-visible">
+                                        </div>
+                                        <div class="header-products-content">
+                                            <h3 class="header-products-heading">
+                                                Pro Graphics
+                                            </h3>
+                                            <p class="header-products-pg">
+                                                Pro Illustrations, Icons, UI Kits
+                                            </p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="header-products-sub-menu__item">
+                                        <div class="header-products-img-container">
+                                            <img src="https://keenthemes.com/images/letter-icons/default/F.svg" alt="" class="header-products-img-none">
+                                            <img src="https://keenthemes.com/images/letter-icons/active/F.svg" alt="" class="header-products-img-visible">
+                                        </div>
+                                        <div class="header-products-content">
+                                            <h3 class="header-products-heading">
+                                                Free Graphics
+                                            </h3>
+                                            <p class="header-products-pg">
+                                                Pro Illustrations, Icons, UI Kits
+                                            </p>
+                                        </div>
+                                    </a>
+                                    
+                                    <a href="#" class="header-products-sub-menu__item">
+                                        <div class="header-products-img-container">
+                                            <img src="https://keenthemes.com/images/letter-icons/default/M.svg" alt="" class="header-products-img-none">
+                                            <img src="https://keenthemes.com/images/letter-icons/active/M.svg" alt="" class="header-products-img-visible">
+                                        </div>
+                                        <div class="header-products-content">
+                                            <h3 class="header-products-heading">
+                                                Metronic
+                                            </h3>
+                                            <p class="header-products-pg">
+                                                #1 Selling Admin of All Time
+                                            </p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="header-products-sub-menu__item">
+                                        <div class="header-products-img-container">
+                                            <img src="https://keenthemes.com/images/letter-icons/default/M.svg" alt="" class="header-products-img-none">
+                                            <img src="https://keenthemes.com/images/letter-icons/active/M.svg" alt="" class="header-products-img-visible">
+                                        </div>
+                                        <div class="header-products-content">
+                                            <h3 class="header-products-heading">
+                                                Metronic
+                                            </h3>
+                                            <p class="header-products-pg">
+                                                #1 Selling Admin of All Time
+                                            </p>
+                                        </div>
+                                    </a>
+                                    
+                                </div>
                             </li>
-                            <li class="header-nav-item">
-                                <a href="#" class="header-nav-link">Learn</a>
+                            <li class="header-nav-item header-learn" style="position: relative;">
+                                <a href="#" class="header-nav-link" >Learn</a>
+                                <div class="header-learn-sub-menu">
+                                    <div class="header-learn__first">
+                                        <div class="header-learn__first-up">
+                                            <a href="#" class="header-products-sub-menu__item">
+                                                <div class="header-products-img-container">
+                                                    <img src="https://keenthemes.com/images/letter-icons/default/M.svg" alt="" class="header-products-img-none">
+                                                    <img src="https://keenthemes.com/images/letter-icons/active/M.svg" alt="" class="header-products-img-visible">
+                                                </div>
+                                                <div class="header-products-content">
+                                                    <h3 class="header-products-heading">
+                                                        Metronic
+                                                    </h3>
+                                                    <p class="header-products-pg">
+                                                        All of Metronic's tips, tricks 
+                                                        <br>
+                                                        
+                                                        and how-to's to get
+                                                        <br>
+                                                        
+                                                        you rolling with your project
+                                                    </p>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="header-products-sub-menu__item">
+                                                <div class="header-products-img-container">
+                                                    <img src="https://keenthemes.com/images/letter-icons/default/K.svg" alt="" class="header-products-img-none">
+                                                    <img src="https://keenthemes.com/images/letter-icons/active/K.svg" alt="" class="header-products-img-visible">
+                                                </div>
+                                                <div class="header-products-content">
+                                                    <h3 class="header-products-heading">
+                                                        Keen Admin
+                                                    </h3>
+                                                    <p class="header-products-pg">
+                                                       All of Keen's tips, tricks <br>and how-to's to get
+
+                                                        <br>you rolling with your project
+
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="header-learn__first-down">
+                                            <a href="#" class="header-products-sub-menu__item header-learn__first-down-item">
+                                                <div class="header-products-img-container">
+                                                    <img src="https://keenthemes.com/images/letter-icons/default/B.svg" alt="" class="header-products-img-none">
+                                                    <img src="https://keenthemes.com/images/letter-icons/active/B.svg" alt="" class="header-products-img-visible">
+                                                </div>
+                                                <div class="header-products-content">
+                                                    <h3 class="header-products-heading">
+                                                        Blog & Annoucements
+                                                    </h3>
+                                                    <p class="header-products-pg">
+                                                        All in one Metronic Admin Tutorials
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="header-learn__second">
+                                        <h4 class="header-learn__second-heading">
+                                            More Resources
+                                        </h4>
+                                        <div class="header-learn__second-link">
+                                            <a href="#" class="header-learn__second-link--item">
+                                                FAQs
+                                            </a>
+                                            <a href="#" class="header-learn__second-link--item">
+            
+                                                License Terms
+                                    
+                                            </a>
+                                            <a href="#" class="header-learn__second-link--item">
+                                                Support
+                                            </a>
+                                            <a href="#" class="header-learn__second-link--item">
+                                                Contact Us
+                                            </a>
+                                            <a href="#" class="header-learn__second-link--item">
+                                                Affiliate Program
+                                            </a>
+                                            <a href="#" class="header-learn__second-link--item">
+                                                Privacy Policy
+                                            </a>
+                                            <a href="#" class="header-learn__second-link--item">
+                                                Terms & Conditions
+                                            </a>
+                                            <a href="#" class="header-learn__second-link--item">
+                                                Refund Policy
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                             </li>
                             <li class="header-nav-item">
                                 <a href="#" class="header-nav-link">Hire Us</a>
                             </li>
-                        </ul>
+                        </ul>     
+                        <div class="header-nav-sign">                            
+                            <button class = "btn ">Sign In</button>
+                        </div>                 
                     </div>
                 </div>
             </div>
         </header>
-        <div class="container" style="height: 5000px;"></div>
+        <div class="container" style="height: 5000px; background-color: #eaf2ff;"></div>
+        <div class="modal">
+            <div class="modal-sign-in">
+                <div class="modal-btn-close">
+                   
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="modal-btn-close-icon-contain">
+                            <g id="Group" transform="translate(12.000000, 12.000000) rotate(-45.000000) translate(-12.000000, -12.000000) translate(4.000000, 4.000000)" fill="#ccc">
+                                <rect class="modal-btn-close-icon" fill="#000000" id="Rectangle-185" x="0" y="7" width="16" height="2" rx="1"></rect>
+                                <rect class="modal-btn-close-icon" fill="#000000" id="Rectangle-185-Copy" opacity="0.5" transform="translate(8.000000, 8.000000) rotate(-270.000000) translate(-8.000000, -8.000000) " x="0" y="7" width="16" height="2" rx="1"></rect>
+                            </g>
+                        </svg>
+                    
+                </div>
+                <div class="modal-body">
+                    <!--Form to Sign In -->
+                    <form action=""  method="POST" class="form" id="form-1">
+                       <div class="account">
+                           <h3 class="account-heading">
+                            Don't have an account?
+                           </h3>
+                           <a href="#" id ="create-acc"class="account-create">
+                               Create Account
+                           </a>
+                       </div>
+                       <h3 class="sign-in-title">
+                        Sign In
+                       </h3>
+                        <div class="spacer"></div>
+                    
+                        <div class="form-group">
+                          <label for="email-1"  class="form-label">Email</label>
+                          <input id="email-1" name="email-1" type="text" rule = "required|email"  class="form-control">
+                          <span class="form-message"></span>
+                        </div>
+                        
+                    
+                        <div class="form-group">
+                            <div class="form-group-password">
+                                <label for="password-1" class="form-label">Password</label>
+                                <a href="#" id = "forgot" class="forgot-password">
+                                    Forgot Password?
+                                </a>
+                            </div>
+                          <input id="password-1" name="password-1"  rule = "required|min:5" type="password"  class="form-control">
+                          <span class="form-message"></span>
+                        </div>
+                        <div class="submit-form">
+                            <button class="form-submit btn">Sign In</button>
+                            <a href="#" class="sign-with-gg">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="h-20px mr-2">
+                                    <path d="M19.9895 10.1871C19.9895 9.36767 19.9214 8.76973 19.7742 8.14966H10.1992V11.848H15.8195C15.7062 12.7671 15.0943 14.1512 13.7346 15.0813L13.7155 15.2051L16.7429 17.4969L16.9527 17.5174C18.879 15.7789 19.9895 13.221 19.9895 10.1871Z" fill="#4285F4"></path>
+                                    <path d="M10.1993 19.9313C12.9527 19.9313 15.2643 19.0454 16.9527 17.5174L13.7346 15.0813C12.8734 15.6682 11.7176 16.0779 10.1993 16.0779C7.50243 16.0779 5.21352 14.3395 4.39759 11.9366L4.27799 11.9466L1.13003 14.3273L1.08887 14.4391C2.76588 17.6945 6.21061 19.9313 10.1993 19.9313Z" fill="#34A853"></path>
+                                    <path d="M4.39748 11.9366C4.18219 11.3166 4.05759 10.6521 4.05759 9.96565C4.05759 9.27909 4.18219 8.61473 4.38615 7.99466L4.38045 7.8626L1.19304 5.44366L1.08875 5.49214C0.397576 6.84305 0.000976562 8.36008 0.000976562 9.96565C0.000976562 11.5712 0.397576 13.0882 1.08875 14.4391L4.39748 11.9366Z" fill="#FBBC05"></path>
+                                    <path d="M10.1993 3.85336C12.1142 3.85336 13.406 4.66168 14.1425 5.33717L17.0207 2.59107C15.253 0.985496 12.9527 0 10.1993 0C6.2106 0 2.76588 2.23672 1.08887 5.49214L4.38626 7.99466C5.21352 5.59183 7.50242 3.85336 10.1993 3.85336Z" fill="#EB4335"></path>
+                                </svg>
+                                <span style="width:10px"></span>
+                                Sign In with Google
+                            </a>
+                        </div>
+                        
+                      </form>
+                      <!-- Form to create account-->
+                      <form action="" method="POST" class="form" id="form-2">
+                        <div class="account">
+                            <h3 class="account-heading">
+                             Don't have an account?
+                            </h3>
+                            <a href="#" id = "sign-in"class="account-create">
+                                Sign In
+                            </a>
+                        </div>
+                        <h3 class="sign-in-title">
+                         Create Account
+                        </h3>
+                         <div class="spacer"></div>
+                     
+                         <div class="form-group">
+                           <label for="email-2"  class="form-label">Email</label>
+                           <input id="email-2" name="email-2" type="text" rule = "required|email"  class="form-control">
+                           <span class="form-message"></span>
+                         </div>
+                         
+                     
+                         <div class="form-group">
+                             <div class="form-group-password">
+                                 <label for="password-2" class="form-label">Password</label>
+                               
+                            </div>
+                           <input id="password-2" name="password-2"  rule = "required|min:5" type="password"  class="form-control">
+                           <span class="form-message"></span>
+                         </div>
+                         <div class="form-group">
+                            <label for="password_confirmation" class="form-label">Confirm Password</label>
+                            <input id="password_confirmation"  name="password_confirmation" type="password" class="form-control">
+                            <span class="form-message"></span>
+                         </div>
+                         <div class="form-group ">
+                            <div class="form-group-checkbox">
+                                <label class="form-group-checkbox-container">
+                                    <input type="checkbox" value="1" name="agree_terms">
+                                    <span class='checkmark'></span>
+
+                                    
+                                </label>
+                                
+                                <div class="form-group-checkbox-content">
+
+                                    <span>I agree with</span>
+                                    <a href="https://keenthemes.com/terms" class="check-box-link">Keenthemes Term of Use</a>
+                                </div>
+                                </div>
+                                <div class="form-message"></div>
+                            </div>
+                            <div class="form-group py-1 fv-plugins-icon-container has-danger">
+                                <div class="g-recaptcha" id="g-recaptcha-signup" data-sitekey="6Lf92jMUAAAAANk8wz68r73rA2uPGr4_e0gn96BL"><div style="width: 304px; height: 78px;"><div>
+                                    <iframe title="reCAPTCHA" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Lf92jMUAAAAANk8wz68r73rA2uPGr4_e0gn96BL&amp;co=aHR0cHM6Ly9rZWVudGhlbWVzLmNvbTo0NDM.&amp;hl=vi&amp;v=Eyd0Dt8h04h7r-D86uAD1JP-&amp;size=normal&amp;badge=bottomright&amp;cb=er7zhr9fy9r6" width="304" height="78" role="presentation" name="a-4t2cr9u6p29c" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div></div>
+                            <div class="fv-plugins-message-container"><div data-field="g-recaptcha-response" data-validator="promise" class="fv-help-block">Google Recaptcha is required</div></div></div>
+                         <div class="submit-form">
+                             <button class="form-submit btn">Sign In</button>
+                             <a href="#" class="sign-with-gg">
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="h-20px mr-2">
+                                     <path d="M19.9895 10.1871C19.9895 9.36767 19.9214 8.76973 19.7742 8.14966H10.1992V11.848H15.8195C15.7062 12.7671 15.0943 14.1512 13.7346 15.0813L13.7155 15.2051L16.7429 17.4969L16.9527 17.5174C18.879 15.7789 19.9895 13.221 19.9895 10.1871Z" fill="#4285F4"></path>
+                                     <path d="M10.1993 19.9313C12.9527 19.9313 15.2643 19.0454 16.9527 17.5174L13.7346 15.0813C12.8734 15.6682 11.7176 16.0779 10.1993 16.0779C7.50243 16.0779 5.21352 14.3395 4.39759 11.9366L4.27799 11.9466L1.13003 14.3273L1.08887 14.4391C2.76588 17.6945 6.21061 19.9313 10.1993 19.9313Z" fill="#34A853"></path>
+                                     <path d="M4.39748 11.9366C4.18219 11.3166 4.05759 10.6521 4.05759 9.96565C4.05759 9.27909 4.18219 8.61473 4.38615 7.99466L4.38045 7.8626L1.19304 5.44366L1.08875 5.49214C0.397576 6.84305 0.000976562 8.36008 0.000976562 9.96565C0.000976562 11.5712 0.397576 13.0882 1.08875 14.4391L4.39748 11.9366Z" fill="#FBBC05"></path>
+                                     <path d="M10.1993 3.85336C12.1142 3.85336 13.406 4.66168 14.1425 5.33717L17.0207 2.59107C15.253 0.985496 12.9527 0 10.1993 0C6.2106 0 2.76588 2.23672 1.08887 5.49214L4.38626 7.99466C5.21352 5.59183 7.50242 3.85336 10.1993 3.85336Z" fill="#EB4335"></path>
+                                 </svg>
+                                 <span style="width:10px"></span>
+                                 Sign In with Google
+                             </a>
+                         </div>
+                         
+                       </form>
+                       <!-- form to text account when forgot -->
+                       <form action=""  method="POST" class="form" id="form-3">
+                        
+                        <h3 class="sign-in-title">
+                            Forgot Your Password ?
+                        </h3>
+                        <p class="sign-in-pg">
+                            Please enter your email and we will send a link to your email to reset your password
+                        </p>
+                         <div class="spacer"></div>
+                     
+                         <div class="form-group">
+                           <label for="email-3"  class="form-label">Email</label>
+                           <input id="email-3" name="email-3" type="text" rule = "required|email"  class="form-control">
+                           <span class="form-message"></span>
+                         </div>
+                         <div class="form-group py-1 fv-plugins-icon-container has-danger">
+                            <div class="recaptcha" id="signup" data-sitekey="6Lf92jMUAAAAANk8wz68r73rA2uPGr4_e0gn96BL"><div style="width: 304px; height: 78px;"><div>
+                                <iframe title="reCAPTCHA" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Lf92jMUAAAAANk8wz68r73rA2uPGr4_e0gn96BL&amp;co=aHR0cHM6Ly9rZWVudGhlbWVzLmNvbTo0NDM.&amp;hl=vi&amp;v=Eyd0Dt8h04h7r-D86uAD1JP-&amp;size=normal&amp;badge=bottomright&amp;cb=er7zhr9fy9r6" width="304" height="78" role="presentation" name="a-4t2cr9u6p29c" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div></div>
+                        <div class="fv-plugins-message-container"><div data-field="g-recaptcha-response" data-validator="promise" class="fv-help-block">Google Recaptcha is required</div></div></div>
+                     
+                        
+                         <div class="submit-form" style="justify-content: center;">
+                             <button class="form-submit btn">Reset Password</button>
+                             <a href="#" id = "cancel"class="btn sign-with-gg cancel">
+                                
+                                 Cancel
+                             </a>
+                         </div>
+                         
+                       </form>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="./assits/js/header.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./assits/owlcarousel/owl.carousel.min.js"></script>
+    <script src="./assits/js/validator1.js"></script>
+    <script src="./assits/js/modal.js"></script>
+    <!-- scroll to top -->
     <script>
         $(document).ready(function(){
             $(window).scroll(function(){
@@ -90,6 +438,53 @@
             })
         });
         
+    </script>
+    <!-- modal vaidator -->
+    <script>
+        // form 1
+        Validator({
+            form: "#form-1",
+            formGroup:'.form-group',
+            errorSelector:'.form-message',
+            
+          rules:[
+            Validator.isRequired('#email-1','Email is Required'),
+            Validator.isEmail('#email-1','The value is not a valid email address'),
+            Validator.minLength('#password-1',6),
+            Validator.isRequired('#password-1','Password is required')    
+        ]
+        })
+        // form 2
+        Validator({
+            form: "#form-2",
+            formGroup:'.form-group',
+            errorSelector:'.form-message',
+            
+          rules:[
+            Validator.isRequired('#email-2','Email is Required'),
+            Validator.isEmail('#email-2','The value is not a valid email address'),
+            Validator.isRequired('#password-2','Password is required'),
+            Validator.minLength('#password-2',6),
+            Validator.isRequired('#password_confirmation', 'Password is required'),
+            Validator.confirm("#password_confirmation",  function() {
+              return document.querySelector('#form-2 #password').value;
+            },'The password and its confirm are not the same'),
+            Validator.isRequired('input[name="agree_terms"]','You must agree with Keenthemes Term of Use'),
+        ]
+        })
+        //form 3
+        Validator({
+            form: "#form-3",
+            formGroup:'.form-group',
+            errorSelector:'.form-message',
+            
+          rules:[
+            Validator.isRequired('#email-3','Email is Required'),
+            Validator.isEmail('#email-3','The value is not a valid email address'),
+          
+           
+        ]
+        })
     </script>
 </body>
 </html>

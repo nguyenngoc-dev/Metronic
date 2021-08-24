@@ -2,11 +2,15 @@
   --textDarkColor:#2f3044;
   --textBlandColor:#7e8299;
   --primaryColor:#0094ff;
+  --hoverColor:#0076cc;
   --heightStart:90px;
   --heightScroll:70px;
+  --muteColor:#b5b5c3;
+  --opacityColor: #fafaff;
 }
 * {
-  box-sizing: inherit; }
+  box-sizing: inherit; 
+}
 
 html {
   font-size: 62.5%;
@@ -50,4 +54,38 @@ ul{
 }
 .active{
   color: var(--primaryColor) !important;
+}
+.btn {
+  outline: none;
+  background-color: var(--primaryColor);
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  
+}
+.btn:hover {
+  background-color: #0076cc;
+
+}
+/* css for scroll-bar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: none; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ccc; 
+}
+::-webkit-scrollbar-track-piece {
+
 }

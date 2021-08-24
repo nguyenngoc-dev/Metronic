@@ -1,0 +1,273 @@
+.modal {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.1);
+    z-index: 100;
+    /* display: none; */
+    
+}
+.modal.show {
+    display: block;
+}
+.modal-sign-in{
+    width: 500px;
+    min-height: 500px;
+    background-color: white;
+    margin: auto;
+    position: relative;
+    z-index: 105;
+    box-shadow: 0 0.25rem 0.5rem rgb(235 237 243 / 50%);
+    border-radius: 10px;
+    padding:24px;
+    animation:  modalFadeIn 0.3s linear;
+    animation-fill-mode: backwards;
+    transition: all linear 0.3s;
+}
+@keyframes modalFadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes modalFadeOut{
+    to{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    from{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.modal-body{
+    overflow-y: auto;
+    max-height:550px;
+    padding:16px;
+}
+.modal-btn-close{
+    text-align: end;
+    cursor: pointer;
+    
+}
+.modal-btn-close-icon {
+    fill:#b5b5c3;
+}
+.modal-btn-close-icon-contain:hover .modal-btn-close-icon{
+    fill: var(--primaryColor) !important;
+}
+/* form validator */
+.account {
+    text-align: end;
+
+}
+.account-heading {
+    color:#b5b5c3;
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+.account-create
+{
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--primaryColor);
+}
+.form-group-password {
+    display: flex;
+    justify-content: space-between;
+}
+.forgot-password{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--primaryColor);
+    
+}
+.account-create:hover,
+.forgot-password:hover {
+    color:#0076cc;
+}
+.sign-in-title{
+    font-size: 23px;
+    text-align: center;
+    color: var(--textDarkColor);
+    padding:10px 0 8px;
+    margin-top:12px;
+}
+.sign-in-pg{
+    font-size: 1.4rem;
+    color: var(--textBlandColor);
+    text-align: center;
+    font-weight: 500;
+}
+.form-group {
+    margin: 32px 0;
+}
+/* form group check box css */
+.form-group-checkbox{
+    display: flex;
+    align-items: center;
+}
+
+
+.form-group-checkbox-content{
+    
+    font-size: 1.4rem;
+    margin-left: 8px;
+    color: var(--textBlandColor);
+    margin-bottom: 5px;
+
+
+}
+
+.check-box-link{
+    color:var(--primaryColor);
+}
+.check-box-link:hover {
+    color:var(--hoverColor);
+}
+.form-group-checkbox-container {
+    display: flex;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 12px;
+  top:-5px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  }
+.form-group-checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius:6px;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .form-group-checkbox-container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .form-group-checkbox-container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .form-group-checkbox-container input:checked ~ .checkmark::after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .form-group-checkbox-container .checkmark::after {
+    left: 7px;
+    top: 3px;
+    width: 3px;
+    height: 7px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+.form-label {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #5e5f6c;
+}
+.form-control {
+    height: 60px;
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: #f5f8fa;
+    border-radius: 8px;
+    margin: 8px 0;
+    padding: 1rem 1.5rem;
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: var(--textDarkColor);
+}
+.form-group.invalid .form-control {
+    border-color: #f33a58;
+  }
+  
+  .form-group.invalid .form-message {
+    color: #f33a58;
+  }
+  
+  .form-message {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    padding: 4px 0 0;
+    font-weight: 500;
+  }
+.submit-form {
+    display: flex;
+}
+
+.form-submit {
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 16px 24px;
+    
+}
+
+.sign-with-gg{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    color: var(--primaryColor);
+    font-weight: 500;
+    background-color: #edf7ff;
+    border-radius: 5px;
+    margin-left: 10px;
+    transition: all 0.3s linear;
+}
+.cancel {
+    flex-grow: unset
+}
+
+.sign-with-gg:hover {
+    color:white;
+    background-color: var(--primaryColor);
+}
+@media (max-width:739px) {
+    .modal-sign-in {
+        width: 360px;
+    }
+}
+#form-2,#form-3 {
+    display: none;
+}
