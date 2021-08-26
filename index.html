@@ -38,18 +38,35 @@
         <header class="header"> 
             <div class="grid wide full-height" >
                 <div class="container full-height">
+                    <!-- btn for mobile -->
+                    <div class="btn-menu-mobile">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" style="cursor: pointer;" class="btn-menu-mobile-icon">
+                            <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+                            <title>Stockholm-icons / Text / Menu</title>
+                            <desc>Created with Sketch.</desc>
+                            <defs></defs>
+                            <g id="Stockholm-icons-/-Text-/-Menu" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <rect id="bound" x="0" y="0" width="24" height="24"></rect>
+                                <rect id="Rectangle-20" fill="#7e8299" x="4" y="5" width="16" height="3" rx="1.5"></rect>
+                                <path d="M5.5,15 L18.5,15 C19.3284271,15 20,15.6715729 20,16.5 C20,17.3284271 19.3284271,18 18.5,18 L5.5,18 C4.67157288,18 4,17.3284271 4,16.5 C4,15.6715729 4.67157288,15 5.5,15 Z M5.5,10 L18.5,10 C19.3284271,10 20,10.6715729 20,11.5 C20,12.3284271 19.3284271,13 18.5,13 L5.5,13 C4.67157288,13 4,12.3284271 4,11.5 C4,10.6715729 4.67157288,10 5.5,10 Z" id="Combined-Shape" fill="#b5b5c3" opacity="0.3"></path>
+                            </g>
+                        </svg>
+                    </div>
                     <div class="header-logo full-height">
                         <a href="#" class="header-logo__link">
                             <img src="https://keenthemes.com/images/logos/logo-full.svg" alt="" class="header-logo__img">
                         </a>
                     </div>
                     <div class="header-nav">
-                        <ul class="header-nav-list">
-                            <li class="header-nav-item">
-                                <a href="#" class="header-nav-link">Home</a>
+                        <ul class="header-nav-list ">
+                            <li class="header-nav-item ">
+                                <a href="#" class="header-nav-link active">Home</a>
                             </li>
                             <li class="header-nav-item header-products" style="position: relative;">
-                                <a href="#" class="header-nav-link active">Products</a>
+                                <a href="#" class="header-nav-link slide-product" >
+                                   <span> Products</span>
+                                   <i class="fas fa-chevron-right arrow-mobile arrow-mobile-product"></i>
+                                </a>
                                 <div class="header-products-sub-menu">
                                     <a href="#" class="header-products-sub-menu__item">
                                         <div class="header-products-img-container">
@@ -140,7 +157,10 @@
                                 </div>
                             </li>
                             <li class="header-nav-item header-learn" style="position: relative;">
-                                <a href="#" class="header-nav-link" >Learn</a>
+                                <a href="#" class="header-nav-link" id = 'slide-learn'>
+                                    <span>Learn</span>
+                                    <i class="fas fa-chevron-right arrow-mobile arrow-mobile-learn"></i>
+                                </a>
                                 <div class="header-learn-sub-menu">
                                     <div class="header-learn__first">
                                         <div class="header-learn__first-up">
@@ -238,6 +258,7 @@
                                 <a href="#" class="header-nav-link">Hire Us</a>
                             </li>
                         </ul>     
+                        <div class="nav-overlay"></div>
                         <div class="header-nav-sign">                            
                             <button class = "btn ">Sign In</button>
                         </div>                 
@@ -412,11 +433,12 @@
             </div>
         </div>
     </div>
-    <script src="./assits/js/header.js"></script>
+  
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./assits/owlcarousel/owl.carousel.min.js"></script>
     <script src="./assits/js/validator1.js"></script>
-    <script src="./assits/js/modal.js"></script>
+    <script src="./assits/js/modal.js"></script> 
+     <script src="./assits/js/header.js"></script>
     <!-- scroll to top -->
     <script>
         $(document).ready(function(){

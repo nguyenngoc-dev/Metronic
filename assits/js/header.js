@@ -1,5 +1,6 @@
 // const $ = document.querySelector.bind(document);
 // const $$ = document.querySelectorAll.bind(document);
+var main = document.querySelector('.main')
 window.onscroll = function(e) {
     const header = document.querySelector('.header')
     if(window.scrollY>0)
@@ -25,3 +26,72 @@ var headerProductItemPg = document.querySelector('.header-products-pg');
 //         headerProductItemImg.style.display = 'block';
 //     }
 // }
+
+
+    
+    // đang còn bug chỗ hover vào item ở list
+$(document).ready(function(){
+    
+  // đóng mở menu ở mobile
+ window.onresize = function () {
+
+     if(main.clientWidth > 996) {
+       
+        $('.header-nav-list').removeClass('transform')
+        $('.nav-overlay ').css({
+            transition:'all linear 0.3s',
+            display:'none'
+        })
+     }
+   
+ }
+ 
+
+      $('.btn-menu-mobile-icon').click(function () {
+              $('.header-nav-list').css({
+              transition:'all linear 0.3s'
+          })
+          $('.header-nav-list').addClass('transform')
+          $('.nav-overlay ').css({
+              transition:'all linear 0.3s',
+              display:'block'
+          })
+      })
+    
+      $('.nav-overlay').click(function() {
+          $('.header-nav-list').css({
+              transition:'all linear 0.3s'
+          })
+          $('.header-nav-list').removeClass('transform')
+          $('.nav-overlay ').css({
+              transition:'all linear 0.3s',
+              display:'none'
+          })
+      })
+      //slide product and learn
+      $(".slide-product").click(function(){
+          $('.arrow-mobile-product').css({
+              transition:'all linear 0.3s'
+          },500);
+          $('.arrow-mobile-product').toggleClass('rotate')
+          $(".header-products-sub-menu").slideToggle(500);
+      });
+      $("#slide-learn").click(function(){
+          $('.arrow-mobile-learn').css({
+              transition:'all linear 0.3s'
+          },500);
+          $('.arrow-mobile-learn').toggleClass('rotate')
+          $(".header-learn-sub-menu").slideToggle(500);
+          });
+  
+
+  
+})
+
+    
+
+
+
+
+
+ 
