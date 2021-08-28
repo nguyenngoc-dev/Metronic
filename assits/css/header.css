@@ -6,7 +6,7 @@
     top: 0;
     left: 0;
     right: 0;
-    transition: all linear 0.2s;
+   
 }
 .header .container{
     display: flex;
@@ -167,11 +167,16 @@
     
 }
 
-.header-products-heading{
+
+   
+.header-products-heading {
     color: var(--textDarkColor);
     margin-top: 0;
+    font-weight: 600;
     margin-bottom: 8px;
+    font-size: 1.6rem;
 }
+
 
 .header-products-pg{
     color: var(--muteColor);
@@ -265,12 +270,17 @@
 .header-learn__second-link--item:hover {
     color: var(--primaryColor);
 }
-
+.sub-header {
+    height: 90px;
+} 
 @media (max-width:996px) {
     :root{
         --heightStart:70px;
         --heightScroll:60px;
       }
+      .sub-header {
+        height: 70px;
+    } 
       .header-nav {
         justify-content: flex-end;
       }

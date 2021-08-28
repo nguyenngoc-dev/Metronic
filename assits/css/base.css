@@ -29,6 +29,7 @@ html {
   background-color: var(--primaryColor);
   border-radius: 5px;
   opacity: 0.4;
+  z-index: 1000;
   display: none;
 }
 #btn:hover{
@@ -63,14 +64,28 @@ ul{
   padding: 10px 24px;
   font-size: 1.2rem;
   border-radius: 5px;
-  font-weight: 600;
+  font-weight: 500;
   cursor: pointer;
   transition: all 0.3s linear;
   
 }
+.btn:focus {
+  outline: none !important;
+  border: none !important;
+}
+.mb-5 {
+  margin-bottom: 5rem;
+}
 .btn:hover {
   background-color: #0076cc;
+  color: white;
 
+}
+a {
+  text-decoration: none !important;
+}
+a:hover {
+  text-decoration: none !important;
 }
 /* css for scroll-bar */
 ::-webkit-scrollbar {

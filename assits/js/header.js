@@ -42,9 +42,12 @@ $(document).ready(function(){
             transition:'all linear 0.3s',
             display:'none'
         })
-     }
+        $('.header-nav-list').css({
+            transition:'unset'
+     })
    
  }
+}
  
 
       $('.btn-menu-mobile-icon').click(function () {
