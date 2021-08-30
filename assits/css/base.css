@@ -14,7 +14,7 @@
 
 html {
   font-size: 62.5%;
-  font-family: 'Poppins', sans-serif;
+  font-family:  "Helvetica Neue" , Helvetica,Arial,sans-serif;
   line-height: 1.6rem;
   box-sizing: border-box;
   scroll-behavior: smooth; 
@@ -76,10 +76,29 @@ ul{
 .mb-5 {
   margin-bottom: 5rem;
 }
+.mb-3 {
+  margin-bottom: 3rem;
+}
 .btn:hover {
   background-color: #0076cc;
   color: white;
 
+}
+.text-dark {
+  color:var(--textDarkColor); 
+  font-size:1.6rem;
+  font-weight:600
+}
+.tex-bland {
+  color:var(--muteColor); 
+  font-size:1.6rem;
+  font-weight:600
+}
+.button-text {
+  padding:4px 14px; color:var(--primaryColor);
+  font-size:1.2rem;
+  background-color: rgba(0,148,255,.12);
+  border-radius: 5px;
 }
 a {
   text-decoration: none !important;

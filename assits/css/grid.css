@@ -29,8 +29,8 @@
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -15px;
-    margin-right: -15px;
+    margin-left: -10px;
+    margin-right: -10px;
 }
 
 .row.no-gutters {
@@ -39,8 +39,8 @@
 }
 
 .col {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .row.no-gutters .col {
@@ -459,11 +459,19 @@
         max-width: 1320px !important;
     }
 }
+/*  */
+@media (min-width: 996px) and (max-width:1139px) {
+    .wide {
+        max-width: 960px !important;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
 
 /* > PC low resolution */
-@media (min-width: 996px) and (max-width: 1239px) {
+@media (min-width: 1139x) and (max-width: 1239px) {
     .wide {
-        width: 960px;
+        width: 1140px;
     }
 
     .wide .row {
@@ -617,7 +625,7 @@
 }
 @media (max-width:739px){
     .row{
-        margin:0 12px;
+        margin:0 10px;
         
     }
 }
