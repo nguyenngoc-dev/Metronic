@@ -8,13 +8,13 @@ window.onscroll = function(e) {
         header.style.height = 'var(--heightScroll)';
         header.style.boxShadow = '0px 1px 3px 1px rgb(0 0 0 / 3%)'
         header.style.borderBottom = 'unset';
-        header.style.backgroundColor = 'white';
+     
     }
     else{
         header.style.height = 'var(--heightStart)';
         header.style.boxShadow = 'unset'
         header.style.borderBottom = '1px solid rgba(16,16,16,.05)'
-        header.style.backgroundColor = '#eaf2ff';
+   
     }
 }
 var headerProductItem = document.querySelectorAll('.header-products-sub-menu__item');

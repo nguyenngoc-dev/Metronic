@@ -1,3 +1,125 @@
 .footer {
     margin-top: 40px;
 }
+.footer-row {
+    margin-top: -80px;
+}
+
+.footer-column {
+
+}
+
+.footer-heading {
+    font-size: 1.7rem;
+    color:#b5b5c3;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-item-link {
+    transition: all linear 0.1s;
+    line-height: 1.6;
+    padding: 10px 0;
+
+}
+.footer-item-link:hover {
+    color: var(--primaryColor);
+}
+.footer-item-img-container {
+    display: flex;
+    align-items: center;
+}
+.footer-item-img {
+    width: 20px;
+    margin-right: 12px;
+}
+.footer-ended {
+    padding: 35px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #152231;
+}
+.footer-first {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-first-logo-link {
+    margin-right: 12px;
+}
+.footer-first-logo {
+    height: 25px;
+}
+.footer-first-pg {
+    
+    color: var(--textBlandColor);
+    font-size: 1.3rem;
+    line-height: 1;
+
+}
+.footer-second {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.footer-second-pg {
+
+    margin-right: 12px;
+    font-size: 1.3rem;
+    color: var(--textBlandColor);
+}
+
+
+.footer-second-pg-link {
+    color: var(--muteColor);
+}
+.footer-second-pg-link:hover {
+    color:var(--primaryColor);
+}
+.footer-second-img-container {
+
+}
+.footer-second-img {
+    height: 20px;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+
+@media (max-width:739px) {
+    .footer-column {
+        text-align: center;
+    }
+    .footer-item-img-container {
+        justify-content: center;
+    }
+    .footer-ended {
+        flex-direction: column-reverse;
+    }
+    .footer-first-logo {
+        height: 20px;
+    }
+    .footer-first-pg {
+        font-size: 1.1rem;
+    }
+    .footer-second {
+        flex-direction: column;
+    }
+    .footer-second-pg {
+        font-size: 1.2rem;
+        margin-bottom: 12px;
+    }
+    .footer-second-img-container {
+        margin-bottom: 12px;
+    }
+    .footer-ended {
+        padding: 20px;
+    }
+}
+

@@ -57,6 +57,9 @@
     border-radius: 5px;
     width: 350px;
 }
+.box-contact-email-input::placeholder {
+    color:white;
+}
 .email-btn {
     position: absolute;
     right: 0;
@@ -81,6 +84,7 @@
     }
     .box-contact-email-input {
         width: 250px;
+        font-size: 1.3rem;
     }
     .box-contact-first {
         padding: 18px 30px 0 30px;

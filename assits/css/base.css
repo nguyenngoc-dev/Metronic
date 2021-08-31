@@ -94,6 +94,11 @@ ul{
   font-size:1.6rem;
   font-weight:600
 }
+.text-bland-color {
+  color:var(--textBlandColor); 
+  font-size:1.6rem;
+  font-weight:500
+}
 .button-text {
   padding:4px 14px; color:var(--primaryColor);
   font-size:1.2rem;
