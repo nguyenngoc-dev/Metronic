@@ -1,0 +1,15 @@
+* {
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6rem;
+  box-sizing: border-box;
+  scroll-behavior: smooth; }
+
+.main #btn .icon-up {
+  font-size: 16px; }
+
+.main #btn .icon-bellow {
+  font-size: 16px; }

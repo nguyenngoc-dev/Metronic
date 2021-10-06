@@ -11,7 +11,9 @@
 * {
   box-sizing: inherit; 
 }
-
+.main {
+  overflow: hidden;
+}
 html {
   font-size: 62.5%;
   font-family:  "Helvetica Neue" , Helvetica,Arial,sans-serif;
